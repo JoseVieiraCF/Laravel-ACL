@@ -12,4 +12,9 @@ class PostController extends Controller
         $posts = $post->all();
         return view('dashboard')->with(['posts'=>$posts]);
     }
+
+    public function getPost($id)
+    {
+        return $id;
+    }
 }
