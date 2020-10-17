@@ -6,9 +6,6 @@
     </x-slot>
     @foreach($posts as $post)
         <h1>{{$post->title}}</h1>
-        <span>{{$post->description}}</span><br>
-        
-        <hr>
-        <br>    
+        <span>{{$post->description}}</span><br> 
     @endforeach
 </x-app-layout>
