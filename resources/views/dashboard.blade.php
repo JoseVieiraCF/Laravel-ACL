@@ -4,6 +4,11 @@
             {{ __('Dashboard') }}
         </h2>
     </x-slot>
+    <form action="">
+        <input type="text" placeholder="Title">
+        <input type="text" placeholder="Description">
+        <input type="submit" value="Submit">
+    </form>
     @foreach($posts as $post)
         <h1>{{$post->title}}</h1>
         <span>{{$post->description}}</span><br> 
