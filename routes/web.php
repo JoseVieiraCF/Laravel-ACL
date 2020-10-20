@@ -19,3 +19,4 @@ Route::get('/', function () {
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', 'App\Http\Controllers\PostController@index'
 )->name('dashboard');
+Route::get('/update/{id}','App\Http\Controllers\PostController@update')->name('update');
