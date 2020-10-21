@@ -17,7 +17,11 @@ class PostController extends Controller
     public function update($id)
     {
         $post = Post::find($id);
-        echo $post;
+        if(Gate::allows('update-post',$post)){
+            echo $post;
+        }
+        
+        
         
     }
 
